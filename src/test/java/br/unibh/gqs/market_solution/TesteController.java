@@ -106,7 +106,7 @@ public class TesteController {
     }
 
     @Test
-    public void testeGetCarrinhoCompra() throws Exception {
+    public void teste04() throws Exception {
         CarrinhoCompra carrinho = new CarrinhoCompra();
         carrinho.setId(1L); 
         given(carrinhoCompraService.getById(1L)).willReturn(carrinho);
@@ -118,7 +118,7 @@ public class TesteController {
     }
 
     @Test
-    public void testeAddCarrinhoCompra() throws Exception {
+    public void teste05() throws Exception {
         CarrinhoCompra carrinho = new CarrinhoCompra();
         carrinho.setId(1L); 
         given(carrinhoCompraService.save(any(CarrinhoCompra.class))).willReturn(carrinho);
@@ -131,7 +131,7 @@ public class TesteController {
     }
 
     @Test
-    public void testeUpdateCarrinhoCompra() throws Exception {
+    public void teste06() throws Exception {
         CarrinhoCompra carrinho = new CarrinhoCompra();
         carrinho.setId(1L); 
         given(carrinhoCompraService.save(any(CarrinhoCompra.class))).willReturn(carrinho);
@@ -144,7 +144,7 @@ public class TesteController {
     }
 
     @Test
-    public void testeDeleteCarrinhoCompra() throws Exception {
+    public void teste07() throws Exception {
         given(carrinhoCompraService.exists(1L)).willReturn(true);
 
         this.mockMvc.perform(delete("/carrinhocompra")
@@ -155,7 +155,7 @@ public class TesteController {
     }
 
     @Test
-    public void testeGetAllCarrinhoCompra() throws Exception {
+    public void teste08() throws Exception {
         CarrinhoCompra c1 = new CarrinhoCompra();
         c1.setId(1L);
         CarrinhoCompra c2 = new CarrinhoCompra();
